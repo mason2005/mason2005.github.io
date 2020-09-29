@@ -1,31 +1,109 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title> Mason's Amazing Website</title>
+      <title>Mason's Amazing Website</title>
+      <style>
+    body {
+        background: rgb(127, 199, 215);
+        color: rgb(46, 47, 48);
+        padding: 10px;
+        font-family: arial;
+    }
+    #all-contents {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* navigation menu */
+    nav {
+        background: rgb(239, 80, 41);
+        margin: 0 auto;
+        margin-bottom:20px;
+        display: flex;
+        padding: 10px;
+        border-radius:"https://static.scientificamerican.com/sciam/cache/file/BCC3BD1E-5DC0-4843-A841706AE575C694_source.jpg?w=590&h=800&39BBF62E-5F96-4C6A-A59590CCF416DA11";
+    }
+    h1 {
+        display: flex;
+        align-items: center;
+        color: white;
+        flex: 1;
+        margin: 0;
+    }
+    #nav-ul {
+        list-style-image: none;
+    }
+    .nav-li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* main container area beneath menu */
+    main {
+        background: rgb(245, 238, 219);
+        display: flex;
+    }
+    .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+    }
+    .sidebar-img {
+        width: 200px;
+    }
+    .content {
+        flex: 1;
+        padding: 15px;
+    }
+    #interests {
+        border: 4px silver ridge;
+        padding: 8px;
+    }
+    h2, h3 {
+        margin: 0px;
+    }
+</style>
     </head>
     
     <body>
-    <1!-- All content goes here -->
-      <div>
-       <nav>
+      <!-- All content goes here -->
+        <div id="all-contents"> 
+            <nav>
+                <h1>Mason's First Website</h1>
+                <ul id="nav-ul">
+                    <li class="nav-li">
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="portfolio.html"> Portfolio </a>
+                    </li>
+                </ul>
+            </nav>
 
-       </nav>
+            <main>
+             <!-- Sidebar section -->
+    <div class="sidebar">
+      <img class="sidebar-img"src="data:image/jpeg;base64,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"">
+    </div>
 
-       <main>
-            <!-- Sidebar section -->
-            <div>
-
-            </div>
-            <!-- Content section -->
-            <div>
-            <h2>
-            Mason Lemoine
-            </h2>
-            <p>
-            Student at St.amant High.
-            </p>
-            </div>
-       </main>
-       </div>
+    <!-- Content section -->
+    <div class="content">
+      <h2>Mason Lemoine</h2>
+        <p>Student at St.amant high school</p>
+        <!--Interests section-->
+        <div id="interests">
+            <h3>Interests</h3>
+            <ul>
+                <li>Sleeping</li>
+                <li>Vedio games</li>
+                <li>Tv</li>
+            <ul>
+        </div>
+    </div>
+            </main>
+        </div>
     </body>
 </html>
