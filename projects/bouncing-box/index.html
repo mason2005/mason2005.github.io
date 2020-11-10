@@ -22,7 +22,7 @@
 </head>
 <body class="board">
 	<!-- HTML for the box -->
-	<div class="box">?</div>
+	<div class="box">0</div>
 
 	<script>
 		(function(){
@@ -68,6 +68,12 @@
 			*/
 			function update() {
                 positionX = positionX + speed;
+                if (positionX > boardWidth){
+                    speed *= -1;
+                }
+                if(positionX < 0){
+                    speed *= -1;
+                }
                 moveBoxTo(positionX);
 			}
 			/* 
